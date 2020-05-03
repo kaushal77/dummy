@@ -1,0 +1,22 @@
+
+      <style>
+      	
+      	#editor {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+}
+      </style>
+      <div  id="editor">
+       
+      </div>
+
+
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.7/ace.js" integrity="sha256-C7DTYRJLG+B/VEzHGeoPMw699nsTQYPAXHKXZb+q04E=" crossorigin="anonymous"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+</script>

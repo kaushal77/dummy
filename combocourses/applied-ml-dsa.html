@@ -1,0 +1,1301 @@
+<!doctype html>
+<html lang="en">
+    <head>
+       
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135901251-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135901251-1');
+</script>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="description" content="Best Coding Bootcamp In India">
+<meta content="Coding Bootcamp" name="generator">
+
+  <title>CodeAsylums - Best Coding Bootcamp In India | Data Structures | Algorithms | Full Stack Development | Machine Learning | Data Science| JavaScript</title>
+  <link rel="icon" type="image/gif/png" href="../img/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ -->    <link href="../css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+   <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Pen Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Radley' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Spectral SC' rel='stylesheet'>-->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+                html {
+  scroll-behavior: smooth;
+}
+        .categories {
+            display: none;
+        }
+
+        .categories a {
+            position: relative;
+            display: block;
+            overflow: hidden;
+            height: 50px;
+            line-height: 50px;
+            padding: 0 28px 0 16px;
+            background-color: #d25150;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            color: #ffffff;
+            white-space: nowrap;
+            border-bottom: 1px solid #555b61;
+            text-overflow: ellipsis;
+        }
+
+        .categories a::before,
+        .categories a::after {
+            /* plus icon on the right */
+            position: absolute;
+            top: 50%;
+            right: 16px;
+            display: inline-block;
+            height: 1px;
+            width: 10px;
+            background-color: #7f868e;
+        }
+
+        .categories a::after {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+
+        .categories li:last-child a {
+            border-bottom: none;
+        }
+
+        @media only screen and (min-width: 768px) {
+            .categories {
+                display: block;
+                width: 20%;
+                float: left;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+            }
+
+            .categories a {
+                font-size: 13px;
+                font-size: 0.8125rem;
+                font-weight: 600;
+                padding-left: 24px;
+                padding: 0 24px;
+                -webkit-transition: background 0.2s, padding 0.2s;
+                -moz-transition: background 0.2s, padding 0.2s;
+                transition: background 0.2s, padding 0.2s;
+            }
+
+            .categories a::before,
+            .categories a::after {
+                display: none;
+            }
+
+            .no-touch .categories a:hover {
+                background: #555b61;
+            }
+
+            .no-js .categories {
+                width: 100%;
+                margin-bottom: 2em;
+            }
+        }
+
+        @media only screen and (min-width: 1024px) {
+            .categories {
+                position: fixed;
+                display: block;
+                top: 50%;
+                left: 0;
+                width: 150px;
+                z-index: 2;
+            }
+
+            .categories a::before {
+                /* decorative rectangle on the left visible for the selected item */
+                display: block;
+                top: 0;
+                right: auto;
+                left: 0;
+                height: 100%;
+                width: 3px;
+                background-color: #a9c056;
+                opacity: 0;
+                -webkit-transition: opacity 0.2s;
+                -moz-transition: opacity 0.2s;
+                transition: opacity 0.2s;
+            }
+
+            .categories .selected {
+                background: #42464b !important;
+            }
+
+            .categories .selected::before {
+                opacity: 1;
+            }
+
+            .categories.is-fixed {
+                /* top and left value assigned in jQuery */
+                position: fixed;
+            }
+
+            .no-js .categories {
+                position: relative;
+            }
+
+        }
+    </style>
+<script src="https://code.jivosite.com/widget/c0JtisCE9Z" async></script>
+</head>
+
+<body data-smooth-scroll-offset="77">
+    <div class="nav-container">
+        <div>
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                                                            <a href="../index.html"> <img class="logo logo-dark" alt="logo" src="../img/logo.png" style="    position: absolute;
+margin-top: -10%;
+left: 0px;
+max-height: 4em"> <img class="logo logo-light" alt="logo" src="../img/logo.png"> </a>
+                            </div>
+                            <div class="col-9 col-md-10 text-right" style="margin-left: auto;">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i
+                                    class="icon icon--sm stack-interface stack-menu"></i> </a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+<nav id="menu1" class="bar bar-1  hidden-xs hidden-sm" style="background-color: white;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="../index.html"> <img class="logo logo-dark" alt="logo" src="../img/logo.png" style="    width: 110%;
+    max-height: 170%;
+    position: absolute;
+    margin-top: -15%;">
+                                    <img class="logo logo-light" alt="logo" src="../img/logo.png"> </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left smooth-scroll list-unstyled">
+                                    <li> <a href="../index.html">
+                                            Home
+                                        </a> </li>
+                                        <li> <a href="#curriculum">
+                                            Curriculum
+                                        </a> </li>
+                                        <li> <a href="#culture">
+                                            Culture
+                                        </a> </li>
+                                        <li> <a href="#mentor">
+                                            Mentors
+                                        </a> </li>
+                                        <li> <a href="#alumni">
+                                            Alumnis
+                                        </a> </li>
+                                        <li> <a href="#dates">
+                                            Dates
+                                        </a> </li>
+                                        <li> <a href="../index.html#courses">
+                                            Courses
+                                        </a> </li>
+                                    <!-- <li class="dropdown"> <span class="dropdown__trigger">
+                                            Combo Courses
+                                        </span>
+                                        <div class="dropdown__container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="dropdown__content row w-100">
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a
+                                                                    href="../combocourses/fullstack-dsa.html">
+                                                                    <h5>FullStack</h5>
+                                                                    <li>+ DSA</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a
+                                                                    href="../combocourses/ml-dsa.html">
+                                                                    <h5>Machine Learning</h5>
+                                                                    <li>+ DSA</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a
+                                                                    href="../combocourses/applied-ml-dsa.html">
+                                                                    <h5>Applied ML</h5>
+                                                                    <li>+ DSA</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a
+                                                                    href="../combocourses/devops-dsa.html">
+                                                                    <h5>DevOps</h5>
+                                                                    <li>+ DSA</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a
+                                                                    href="../combocourses/data-analytics-dsa.html">
+                                                                    <h5>Data Analytics</h5>
+                                                                    <li>+ Apti + GD</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a
+                                                                    href="../combocourses/foocode-dsa.html">
+                                                                    <h5>FooCode</h5>
+                                                                    <li>+ DSA</li>
+                                                                </a>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li> -->
+                                    <!-- <li class="dropdown"> <span class="dropdown__trigger">
+                                            Addons
+                                        </span>
+                                        <div class="dropdown__container">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="dropdown__content col-lg-2">
+                                                        <ul class="menu-vertical">
+                                                            <h5> <a href="../addons/mobile-development.html">Mobile
+                                                                    Development</a></h5>
+                                                            <h5> <a href="../addons/advance-dsa.html">Advance DSA</a>
+                                                            </h5>
+                                                            <h5> <a href="../addons/linux-networking.html">Linux +
+                                                                    Networking</a></h5>
+                                                            <h5> <a href="../addons/system-design.html">System
+                                                                    Design</a></h5>
+                                                            <h5> <a href="../addons/deep-learning.html">Deep
+                                                                    Learning</a></h5>
+                                                            <h5> <a href="../addons/computer-vision-nlp.html">Computer
+                                                                    Vision + NLP</a></h5>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li> -->
+
+                                </ul>
+                            </div>
+                            <div class="bar__module">
+                               <!--  <a class="btn btn--sm type--uppercase" href="#customise-template"> <span
+                                        class="btn__text">
+                                        Try Builder
+                                    </span> </a> -->
+                                <a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span
+                                        class="btn__text">
+                                        Apply
+                                    </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main-container">
+        <section class="text-center bg--primary ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2><b>Deep Learning, NLP, Computer Vision</b></h2>
+                        <p class="nanum" style="
+    line-height: initial;
+">Deep dive into the world of Neural Networks, Linguistics & Image Processing with the pre knowledge of Statistics & Machine Learning </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="text-center bg--secondary space--sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10">
+                        <h2><b>OVERVIEW</b></h2>
+
+                        <p class="lead"><b>This Bootcamp helps you to melt within the molten iron of Machine Learning by learning the skills of Deep Learning, Neural Network, Image Processing, Computer Vision and NLP.</b> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg--secondary space--sm text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-block"> <img src="../img/icons/icon1.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                            <h4 class="">4 Week On_site Coding Camp</h4class="">
+                            <p> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-block"> <img src="../img/icons/icon2.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                            <h4 class="">120hrs+ Dedicated Mentoring</h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-block"> <img src="../img/icons/icon3.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                            <h4 class="">Stay Together Code Together</h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="text-block"> <img src="../img/icons/icon4.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                            <h4 class="">40:2 Mentor Ratio</h4>
+                            <p> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="curriculum" class="text-center space--sm bg--dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2><b>WHAT YOU WILL LEARN</b></h2>
+                        <p class="lead"> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--xs ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/html.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Basic Prep Course (ML)</b></span>
+                            <p class="">Python syntax & libraries like Numpy, Pandas, Sklearn, Matplotlib, Statistics & Probability, Linear Algebra, Calculus, Machine Learning Algorithms Dimensionality Reduction Technique (PCA), Accuracy Measurement Techniques.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                             <!-- <img src="../img/icons/fullstackicons/nodeexpressmongo.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Deep Learning Introduction</b></span>
+                            <p class="">Artificial Neural Network, Perceptron Model, Representation of Logistics Regression, Multi-Layered Perceptron model, Forward Propagation, Backward Propagation, Weight Initialization (Zero Initialization Problem, Random Initialization Problem, He Initialization, Xavier/Glorot Initialization).
+                            &nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/reactjavascript.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Advanced Deep Learning</b></span>
+                            <p class="">Activation Function (Linear, Sigmoid, Tanh, Relu, ELU, Leaky Relu, Softmax, Swish), Vanishing Gradient Problem, Exploding Gradient Problem, Gradient Clipping, Bias, Variance, Regularization (Lasso, Ridge, Dropout, Data Augmentation).</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/linuxgit.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Deep Learning Optimization</b></span>
+                            <p class=""> Batch Normalization, Optimizer (Gradient Descent, Stochastic Gradient Descent, Mini-Batch Gradient Descent, Momentum, Nesterov Accelerated Gradient, Adagrad, Adadelta, RMSProp, ADAM), Loss Function (Squared Error Loss, Absolute Error Loss, Huber Loss, Binary Cross Entropy, Hinge Loss, Cross Entropy for Multi Classification, Kullback Leibler Divergence Loss).
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/database.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Tensorflow & Keras<br></b></span>
+                            <p class="">Tensorflow (Basic Syntax, Tensorflow Graphs, Variables, Placeholders, Sessions, Implementation of Regression Problem, Implementation of Classification Problem) & Keras (Data Loading, Preprocessing, Model Building, Model Evaluation, Hyperparameter Tuning).&nbsp;<br></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/interview.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Autoencoder</b></span>
+                            <p class="">Implementation of Regression & Classification problems using Keras, Autoencoder, Sparse Autoencoders, Denoising Autoencoders, Contractive Autoencoder, Variational Autoencoder, Keras Implementation of Autoencoder and its Variants.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/datastructures.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Computer Vision</b></span>
+                            <p class="">Image Definition, Grayscaling, Histogram representation of Image, Image Manipulation, Image Transformation, Translations, Rotations, Scaling, Resizing, Interpolations, Cropping, Brighting, Darking, Bit Masking, Blurring, Sharpening, Binarization, Dilation,  bErosion, Edge Detection.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/algorithm.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Image Segmentation</b></span>
+                            <p class="">Segmentation & Contours, Approximating Contours, Matching Contours Shape, Line Detection, Circle Detection, Blob Detection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/database.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Object Detection using OpenCv<br></b></span>
+                            <p class="">Template Matching, Harris Corner Detection, Shi Tomasi Corner Detection,Image 
+                                Gradient,  Canny Edge Detection, Grid Detection ,Contour Detection ,Feature Matching, Watershed Algorithm, Haar Cascade Features, HOG, SIFT, SURF, FAST, BRIEF, ORB, Viola-Jones Algorithm, Integral Image, AdaBoost, Cascading.&nbsp;<br></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/interview.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Object Detection using CNN</b></span>
+                            <p class="">Region Based CNN, Selective Search Algorithm, Fast Region Based CNN(Fast R-CNN), Faster Region Based CNN(Faster R-CNN),  Region Proposal Network (RPN), YOLO, Single Shot MultiBox Detector (SSD), R-FCN, Keras Implementation of Object Detection using R-CNN, YOLO, SSD and F-RCN.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/datastructures.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Transfer Learning</b></span>
+                            <p class="">Image Classification - CNN (Convolutional Layers, Depth, Stride, Padding, Activation Functions, Pooling Layers, Optimization, Data Augmentation, Flattening), LeNet, GoogLenet, VGG16 & VGG19, ResNet, Inception Network, MobileNet, Transfer Learning, Implementation of TL using Keras.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/algorithm.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Object Tracking using OpenCV</b></span>
+                            <p class="">Object Tracking using OpenCV (Introduction, Filtering by Color, Background Subtraction, Foreground Subtraction, Optical Flow, Mean Shift Tracking, Camshift Tracking, TDL Tracker, Boosting Tracker, Median Flow Tracker, MIL Tracker, KCF Tracker).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/database.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Object Tracking using DL<br></b></span>
+                            <p class="">Stacked Autoencoders and Convolutional Neural Network, Fully Convolutional Network Tracker (FCNT), MD Net, GNet, SNet, Implementation of Object Tracking Techniques.&nbsp;<br></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/interview.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Segmentation</b></span>
+                            <p class=""> Fully Convolutional Networks, Striped Convolution, Transposed Convolution, SegNet, RefineNet, Dilated Convolution, DeepLab, Mask R-CNN, DeepMask, SharpMask, MultiPathNet, Implementation, Implementation of Semantic & Instance Segmentation.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6"> 
+                            <!-- <img src="../img/icons/fullstackicons/datastructures.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Neural Style Transfer</b></span>
+                            <p class="">GANs, Intuition behind GANs, Working of GANs, Image Creation with GANs.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature feature-6">
+                            <!-- <img src="../img/icons/fullstackicons/algorithm.png"
+                                class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" /> -->
+                            <span style="font-size: 14px; color: black;"><b>Data Structures & Algorithms</b></span>
+                            <p class="">Structures, Pointers, STL, Linked List, Stacks, Queues, Trees, BST, Heaps
+                                Number Theory, BitMasking, Dynamic Programming, Graph Theory.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="text-center unpad--bottom switchable cta cta-3 bg--secondary switchable--switch">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-7">
+                        <div class="switchable__text">
+                            <h2><b>Inside our Full Stack Development Bootcamp Curriculum</b></h2>
+                            <p class=""> Download our curriculum package for a more detailed look at our Web
+                                Development Bootcamp curriculum, educational philosophy, and the support structures we
+                                use to support you throughout your Bootcamp journey and beyond. </p>
+                            <a class="btn btn--primary type--uppercase" href="#purchase-template"> <span
+                                    class="btn__text">
+                                    Dowload Curriculam PDF <br></span> </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5"> <img style="height: 500px;width: 350px;" alt="Image" class="block" src="../img/icons/fullstackicons/fulstackpdf.png"> </div>
+
+                </div>
+            </div>
+        </section> -->
+        <section id="culture" class="text-center space--sm bg--primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2 style="font-family: 'Spectral SC'"><b>A DAY IN BOOTCAMP !</b></h2>
+                        <p class="nanum"> WHAT HAVE YOU GOTTEN YOURSELF INTO? </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="space--sm bg--secondary">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="process-1">
+                            <div class="process__item">
+                                <h4 class="coiny">Dedicated 12 Hrs a day Mentorship</h4>
+                                <p class=""> 3 - 4 Hrs Cracking Coding Classes, 3 - 4 Hrs Development Track Implementation Classes, 2 - 3 Hrs of Doubt & Discussion Classes, 2 - 3 Hrs of Collaborative Learning and Peer-Programming </p>
+                            </div>
+                           
+                            <div class="process__item">
+                                <h4 class="coiny">Every Night Online Coding Contest</h4>
+                                <p class=""> A competitive environment of super talented coders and platforms helps you in self-evaluation and prepares you to be competent enough.</p>
+                            </div>
+                            <div class="process__item">
+                                <h4 class="coiny">Development Based 36 Hrs Mentored Hackathons</h4>
+                                <p class=""> Hackathons are the most creative and fun way of learning!
+You get a feel of Team Building, leadership, time management, deadlines and presentation of their skills and product in front of new people.</p>
+                            </div>
+                            <div class="process__item">
+                                <h4 class="coiny">Comfortable stay, healthy food and Mentorship, all in one place.</h4>
+                                <p class=""> This is what separates us from the rest. We just not provide the best learning experience but also care for your well being! From healthy food to comfortable stay (OYO rooms) everything is covered. 24x7 approachable TAs and experienced mentors with customised classrooms.
+ </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mentor" class="text-center space--sm bg--dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2 style="font-family: 'Spectral SC'"><b>MENTORS</b></h2>
+                        <p class="nanum"> Code with experienced passionate developers who inculcate the desire to develop, debug and deploy!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg--dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider slider--inline-arrows" data-arrows="true">
+                            <ul class="slides">
+                               <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/madhav.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">Worked extensively in fullstack development using JavaScript, React, Nodejs, Golang & Java. Developing the the system around the scalability using AWS, Java, Dockers, Kafka, Kubernetes, Blockchain, etc.
+                                            </span>
+                                            <h5>Madhav Chaturvedi</h5> <span>Platform Engineer - R&D at Paysafe</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/rahul.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;" class="h3">With the background of Mathematics and Computing, having the imense knowledge in the field of Data Science including Statistics, Machine Learning, Deep Learning, NLP & Computer Vision.
+                                                <br></span>
+                                            <h5>Rahul Kumar</h5> <span>Head of Data Science & ML at CodeAsylums</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/goyal.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">Passionate Coder worked in the field of Full stack development (React, React Native, Golang, JAVA, Node, Python), BigData (Hadoop, Spark, Kafka, MapReduce) & DevOps (Linux, Dockers, Kubernetes). 
+                                            </span>
+                                            <h5>Rajat Goyal</h5> <span>Ex-D.E.Shaw, Infra-Tech Engineer at Gojek</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/jain.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“Vibrant mentor with extraordinary contributing skills & mindset towards coding and development. Currently working with the Frontend team at Microsoft using JavaScript & React.”
+                                            </span>
+                                            <h5>Rajat Jain</h5> <span>Software Engineer at Microsoft</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/anubhav.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“A versatile mentor and evangelist who move around the world and train in the field of DevOps, System Design & Blockchain.”
+                                            </span>
+                                            <h5>Anubhav Chaturvedi</h5> <span>SRE, DevOps, Blockchain Evangelist & Trainer</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/kajal.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“Data enthusiast who loves to code around the data and the deployment. Covering the scripting, data piplines and system architecture required to develop, scale and deploy the platform.”
+                                            </span>
+                                            <h5>Kajal Singh</h5> <span>Data Engineer at Amazon</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/reshab.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“Excellent competitive programmer, extensively code on various platforms like codechef, hackerrank, interview bits, SPOJ, etc. Also a certified coder from codechef.”
+                                            </span>
+                                            <h5>Reshab</h5> <span>Software Developer at Amazon</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/nabh.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“Passionate in programming and coding the data structures and algorithms with his great aptitude and attitude towards competitive programming.”
+                                            </span>
+                                            <h5>Nabh Chaoudhary</h5> <span>Analyst at Goldman Sachs</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/aayush.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“A guy of Theoritical Computer science and Algorithms who loves to optimize every bit of code. A great mentor who understands the mindset of students towards programming and help them to code their heart out.”
+                                            </span>
+                                            <h5>Aayush Kumar</h5> <span>SDE - 2 at Amazon</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/iti.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“An interactive mentor who is enquisitive to code with people around with the awareness of on going technologies around the world. Currently working as IOs developer in a Ad Network company”
+                                            </span>
+                                            <h5>Iti Agrawal</h5> <span>Software Developer at InMobi Labs</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/ojha.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“A great combination of coder and developer who understands the art of coding and development at same place. Worked with NodeJS, JavaScript, Golang, React with great mindset to optimize the code.”
+                                            </span>
+                                            <h5>Satyarth Ojha</h5> <span>Software Developer at Grab</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../mentors/ghosh.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">“Empathetic mentor who can produce the zeal of coding in any student sitting in the class. A great coder best with his brainstorming, problem solving and optimizing skills.”
+                                            </span>
+                                            <h5>Aditya Ghosh</h5> <span>Software Developer at DirectI (Flock)</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="admission" class="switchable space--sm">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 col-md-6">
+                        <h2 style="font-family: 'Spectral SC'"><b>ADMISSIONS PROCESS.</b></h2>
+                        <p class="">Rome was not built in a day, niether does the trust. We ensure that the trust you have shown in our bootcamp is maintained and built stronger with time .The excellent standards of counselling throughout the process will make you more confident to choose the right path!</p>
+                    </div>
+                    <div class="col-md-6 switchable__text">
+                        <ul class="accordion accordion-1 accordion--oneopen">
+                            <li class="active">
+                                <div class="accordion__title"> <span class="h5">
+                                        <p>Apply online<br></p>
+                                    </span> </div>
+                                <div class="accordion__content">
+                                    <p class=""> A short 5-10 minute application for you to introduce yourself,
+                                        including your education and coding experience, plus your super powers. You know,
+                                        the important details that will help us get to know you.
+                                    </p>
+                                    <p class="lead"> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion__title"> <span class="h5">
+                                        <p>Mentor / Alumni Call<br></p>
+                                    </span> </div>
+                                <div class="accordion__content">
+                                    <p class=""> You will be talking to our alumnis and mentors who will be counselling you for the track you have choosed for the course. Also, we want to know about your techskills which will allow us to allocate the best place for you in the bootcamp </p>
+                                    <p class="lead"> </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion__title"> <span class="h5">
+                                        <p>Prep Modules<br></p>
+                                    </span> </div>
+                                <div class="accordion__content">
+                                    <p class="">The first step to becoming a developer is laying your foundation with
+                                        our Prep Modules. You’ll spend on completing online prep which will introduce
+                                        the basic technologies you’ll use throughout bootcamp. You are required to complete the Prep Modules
+                                        <em>before</em> your first day of bootcamp.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section id="alumni" class="text-center space--sm bg--dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2 style="font-family: 'Spectral SC'"><b>ALUMNI TESTIMONIALS</b></h2>
+                        <p class="nanum"> Wanna know more about us ? Talk to our alumnis </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="class" class="bg--dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="slider slider--inline-arrows" data-arrows="true">
+                            <ul class="slides">
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/ruchika.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">Codeasylums is not just a workshop, it's an experience which changes of concept of learning. The learning atmosphere, the understanding teachers and helping doubt classes motivate you to do your very best and never hesitate to ask doubts.
+                                            </span>
+                                            <h5>Ruchika Tulsyan</h5> <span>Placed at Microsoft </span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/mohak.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">The environment provided by Codeasylums is excellent. Great for college students who are looking to learn new things and utilise their vacations productively. The mentors provide 24*7 guidance. Hackathons are a fun way of implementing. 
+                                            </span>
+                                            <h5>Mohak Jain</h5> <span>Placed at Salesforce</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/mayank.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">The concept of being part of the group 24*7 throughout the span of 30days improves you in all aspects, which is so much more productive than online courses or other off-line courses available in market.
+                                            </span>
+                                            <h5>Mayank Ray Mishra</h5> <span>Jr. Data Scientist at JAVIS</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/omkar.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">Great place to learn and improve your techy skills ! Great mentors and great community as well. Would definitely recommend!
+                                            </span>
+                                            <h5>Omkar Jai</h5> <span>Software Engineer at VOGO</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/ayushi.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">The experience is totally worth it, and I would definitely recommend it to my juniors, just go there, and experience it.
+                                            </span>
+                                            <h5>Ayushi</h5> <span>Software Engineer at Microsoft</span>
+                                        </div>
+                                    </div>
+                                </li> 
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/raunak.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">
+                                            CodeAsylums has been the most incredible experience of my life. I am really glad that I could be a part of the first ever batch. I met new people, brilliant minds and we all are still connected.
+                                            </span>
+                                            <h5>Raunak Agrawal</h5> <span>Analyst (strats) at Goldman Sachs</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/s10.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;">It provides you a great learning experience with a very friendly environment. All the teachers guides and motivates you throughout the bootcamp and hence this helps you in learning new technologies and building confidence.
+                                            </span>
+                                            <h5>Tannu Bhalotia</h5> <span>Software Engineer at Intuit</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="testimonial row justify-content-center">
+                                        <div class="col-lg-2 col-md-4 col-6 text-center"> <img
+                                                class="testimonial__image" alt="Image" src="../alumnis/aman.jpg">
+                                        </div>
+                                        <div class="col-lg-7 col-md-8 col-12"> <span class=""
+                                                style="font-size: 20px;"> It's the best ever bootcamp I have ever attended. The pattern of teaching and the quality mentors and tutors are top notch and it provides a friendly competitive environment of learning.
+                                            </span>
+                                            <h5>Aman Aryan</h5> <span>Software Developer at Scroll</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="dates" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2 style="font-family: 'Spectral SC'"><strong>UPCOMING BOOTCAMP DATES</strong></h2>
+                        <p class=""> 28 Days Offline Coding Camp.<br></p>
+
+                    </div>
+                </div>
+               <style>
+
+th:first-child, td:first-child
+{
+  position:sticky;
+  left:0px;
+  
+}
+td:first-child{
+        z-index: 1000;
+    background-color: #fff;
+}
+
+
+
+            </style>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 bg">
+                       <table class="center table table-responsive slightly-smaller bottommargin-md table_main  table-responsive-stack">
+        <thead>
+          <tr class="active">
+            <th></th>
+            <th class="center"><h6>May 2nd<sup style="color: red;font-size: 6px;position: initial;">*filling fast </sup></h6></th>
+            <th class="center"><h6>May 9th<sup style="color: red;font-size: 6px;position: initial;" >*filling fast </sup></h6></th>
+            <th class="center"><h6>May 16th<sup style="color: red;font-size: 6px;position: initial;">*filling fast </sup></h6></th>
+            <th class="center"><h6>May 23rd<sup style="color: red;font-size: 6px;position: initial;">*filling fast </sup></h6></th>
+            <th class="center"><h6>June 6th<sup style="color: red;font-size: 6px;position: initial;">*filling fast </sup></h6></th>
+            <th class="center"><h6>June 20th<sup style="color: red;font-size: 6px;position: initial;">*filling fast </sup></h6></th>
+             <th class="center"><h6>July 4th<sup style="color: red;font-size: 6px;position: initial;"> </sup></h6></th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-th="" style="font-weight: bold;">Full Stack Web Development + DSA</td>
+            <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Mar 21st [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+                                 <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Mar 21st [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+
+
+                                 <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+          <!--   <td data-th="Mar 21st [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td> -->
+
+        </tr>
+<!--        <tr>
+            <td>Chicago</td>
+            <td class="no-offering">-</td>
+            <td class="no-offering">-</td>
+          </tr> -->
+          <tr>
+            <td data-th="" style="font-weight: bold;">Virgin Algorithms + DSA</i></td>          
+             <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+                                 <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+
+
+                                 <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+          <!--   <td data-th="Mar 21st [1]">-</td> -->
+          </tr>
+ <tr>
+            <td data-th="" style="font-weight: bold;">Machine Learning + DSA</i></td>          
+             <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+                                 <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+
+
+                                 <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+           <!--  <td data-th="Mar 21st [1]">-</td> -->
+          </tr>
+           <tr>
+            <td data-th="" style="font-weight: bold;">Deep Learning, NLP, Computer Vision</i></td>          
+            <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+                                 <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+
+
+                                 <td data-th="Feb 29th [1]">-</td>
+           <!--  <td data-th="Mar 21st [1]">-</td> -->
+          </tr>
+           <tr>
+            <td data-th="" style="font-weight: bold;">DevOps, BigData & System Design</i></td>          
+            <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+                                 <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+
+
+                                 <td data-th="Feb 29th [1]">-</td>
+          <!--   <td data-th="Mar 21st [1]">-</td> -->
+          </tr>
+           <tr>
+            <td data-th="" style="font-weight: bold;">Data Analytics, Apti & Case Studies</i></td>          
+             <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Mar 21st [1]">-</td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+                                 <td data-th="Feb 29th [1]">-</td>
+            <td data-th="Mar 21st [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+            <td data-th="Apr 18th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+
+
+                                 <td data-th="Feb 29th [1]"><a class="btn btn--sm btn--primary type--uppercase" href="https://codeasylums.com/apply/" target="_BLANK"> <span class="btn__text">
+                                    APPLY
+                                </span> </a></td>
+          <!--   <td data-th="Mar 21st [1]">-</td> -->
+          </tr>
+        </tbody>
+      </table>
+                        <!--<table class="border--round table--alternate-row">
+                            <thead>
+                                <br>
+                                <tr class="">
+                                    <th class="bg--primary">2nd May - 29th May</th>
+                                    <th class="bg--dark">9th May - 5th Jun</th>
+                                    <th class="bg--primary">23rd May - 19th Jun</th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <br>
+                                <tr class="">
+                                    <th class="bg--dark">6th Jun - 3rd Jul</th>
+                                    <th class="bg--primary">27th Jun - 24th Jul</th>
+                                    <th class="bg--dark">4th Jul - 31st Jul</th>
+                                </tr>
+                            </thead>
+                        </table>-->
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--  <section id="week" class="text-center space--sm bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8">
+                        <h2>
+                            <p style="font-family: 'Spectral SC'"><b>Week by Week</b><b
+                                    style="font-size: 33px;">&nbsp;</b></pstyle="font-family: 'Coiny'">
+                            </h2>
+                            <p class=" nanum">Description </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container"><br>
+                <div class="row justify-content-between">
+                    <div class="col-md-6 switchable__text">
+                        <ul class="accordion accordion-1">
+                            <li>
+                                <div class="accordion__title"> <span class="h5" style="color:green"><b> Q1 :</b></span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class=""> Stack follows the BEM naming convention that focusses on logical
+                                        code readability that is reflected in both the HTML and CSS. Interactive
+                                        elements such as accordions and tabs follow the same markup patterns making
+                                        rapid development easier for developers and beginners alike. </p>
+                                    <p class=""> Add to this the thoughtfully presented documentation, featuring code
+                                        highlighting, snippets, class customizer explanation and you've got yourself one
+                                        powerful value package. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion__title"> <span class="h5" style="color:blue"><b>Q2 :</b></span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class=""> Stack offers a clean and contemporary to suit a range of purposes
+                                        from corporate, tech startup, marketing site to digital storefront. Elements
+                                        have been designed to showcase content in a diverse yet consistent manner. </p>
+                                    <p class=""> Multiple font and colour scheme options mean that dramatically
+                                        altering the look of your site is just clicks away — Customizing your site in
+                                        the included Variant Page Builder makes experimenting with styles and content
+                                        arrangements dead simple. </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="accordion__title"> <span class="h5" style="color:red"><b>Q3: 3</b></span>
+                                </div>
+                                <div class="accordion__content">
+                                    <p class=""> Medium Rare is an elite author known for offering high-quality,
+                                        high-value products backed by timely and personable support. Recognised and
+                                        awarded by Envato on multiple occasions for producing consistently outstanding
+                                        products, it's no wonder over 20,000 customers enjoy using Medium Rare
+                                        templates. </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section> -->
+        <footer class="space--xxs bg--dark">
+            <div class="container">
+                <!-- <div class="row">
+                    <div class="col-sm-6 col-md-3 col-xs-6">
+                        <h6 class="type--uppercase">Company</h6>
+                        <ul class="list--hover">
+                            <li><a href="#">About Company</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Work With Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-6">
+                        <h6 class="type--uppercase">Developers</h6>
+                        <ul class="list--hover">
+                            <li><a href="#">Developer Center</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <li><a href="#">Tools</a></li>
+                            <li><a href="#">Developer Blog</a></li>
+                            <li><a href="#">Developer Forums</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-6">
+                        <h6 class="type--uppercase">Support</h6>
+                        <ul class="list--hover">
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Live Chat</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <li><a href="#">Press Kit</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-xs-6">
+                        <h6 class="type--uppercase">Locations</h6>
+                        <ul class="list--hover">
+                            <li><a href="#">Melbourne</a></li>
+                            <li><a href="#">London</a></li>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">San Francisco</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-6"> <span class="type--fine-print">© <span class="update-year"></span> Codeasylums </span> <!-- <a class="type--fine-print" href="#">Privacy Policy</a> <a class="type--fine-print" href="#">Legal</a> --> </div>
+                    <div class="col-sm-6 text-right text-left-xs">
+                        <ul class="social-list list-inline list--hover">
+                            <li><a href="https://youtu.be/NhRijUX8_QI"><i class="socicon socicon-youtube icon icon--xs"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/codeasylums"><i class="socicon socicon-linkedin icon icon--xs"></i></a></li>
+                            <li><a href="https://www.facebook.com/CodeAsylums"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                            <li><a href="https://www.instagram.com/codeasylums"><i class="socicon socicon-instagram icon icon--xs"></i></a></li>
+                            <li><a href="https://twitter.com/codeasylums?lang=en"><i class="socicon socicon-twittwer icon icon--xs"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/flickity.min.js"></script>
+    <script src="../js/parallax.js"></script>
+    <script src="../js/smooth-scroll.min.js"></script>
+    <script src="../js/scripts.js"></script>
+
+</body>
+
+</html>

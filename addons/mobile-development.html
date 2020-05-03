@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/stack-interface.css" rel="stylesheet" type="text/css" media="all">
+        <link href="../css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Nanum Pen Script' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Chicle' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Chela One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Radley' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Spectral SC' rel='stylesheet'>
+        <style>
+        .categories{
+        display:none;
+        }
+    .categories a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 28px 0 16px;
+  background-color: #d25150;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #ffffff;
+  white-space: nowrap;
+  border-bottom: 1px solid #555b61;
+  text-overflow: ellipsis;
+}
+.categories a::before, .categories a::after {
+  /* plus icon on the right */
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: inline-block;
+  height: 1px;
+  width: 10px;
+  background-color: #7f868e;
+}
+.categories a::after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.categories li:last-child a {
+  border-bottom: none;
+}
+@media only screen and (min-width: 768px) {
+  .categories {
+      display:block;
+    width: 20%;
+    float: left;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+  .categories a {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding-left: 24px;
+    padding: 0 24px;
+    -webkit-transition: background 0.2s, padding 0.2s;
+    -moz-transition: background 0.2s, padding 0.2s;
+    transition: background 0.2s, padding 0.2s;
+  }
+  .categories a::before, .categories a::after {
+    display: none;
+  }
+  .no-touch .categories a:hover {
+    background: #555b61;
+  }
+  .no-js .categories {
+    width: 100%;
+    margin-bottom: 2em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .categories {
+    position: fixed;
+    display:block;
+    top: 50%;
+    left: 0;
+    width: 150px;
+    z-index: 2;
+  }
+  .categories a::before {
+    /* decorative rectangle on the left visible for the selected item */
+    display: block;
+    top: 0;
+    right: auto;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #a9c056;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  .categories .selected {
+    background: #42464b !important;
+  }
+  .categories .selected::before {
+    opacity: 1;
+  }
+  .categories.is-fixed {
+    /* top and left value assigned in jQuery */
+    position: fixed;
+  }
+  .no-js .categories {
+    position: relative;
+  }
+
+}</style>
+
+    </head>
+    <body data-smooth-scroll-offset="77">
+        <div class="nav-container">
+            <div>
+                <div class="bar bar--sm visible-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3 col-md-2">
+                                <a href="../index.html"> <img class="logo logo-dark" alt="logo" src="../img/logo.png"> <img class="logo logo-light" alt="logo" src="../img/logo.png"> </a>
+                            </div>
+                            <div class="col-9 col-md-10 text-right">
+                                <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs hidden-sm"> <i class="icon icon--sm stack-interface stack-menu"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="menu1" class="bar bar-1 hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-1 col-md-2 hidden-xs">
+                                <div class="bar__module">
+                                    <a href="../index.html"> <img class="logo logo-dark" alt="logo" src="../img/logo.png"> <img class="logo logo-light" alt="logo" src="./img/logo.png"> </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                                <div class="bar__module">
+                                    <ul class="menu-horizontal text-left">
+                                        <li> <a href="../index.html">
+                                        Home
+                                    </a> </li>
+                                    <li class="dropdown"> <span class="dropdown__trigger">
+                                        Combo Courses
+                                    </span>
+                                        <div class="dropdown__container">
+                                            <div class="container" >
+                                                <div class="row">
+                                                    <div class="dropdown__content row w-100">
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="../combocourses/fullstack-dsa.html">
+                                                                <h5>FullStack</h5>
+                                                                <li>+ DSA</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="../combocourses/ml-dsa.html">
+                                                                <h5>Machine Learning</h5>
+                                                                <li>+ DSA</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="../combocourses/applied-ml-dsa.html">
+                                                                <h5>Applied ML</h5>
+                                                                <li>+ DSA</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="../combocourses/devops-dsa.html">
+                                                                <h5>DevOps</h5>
+                                                                <li>+ DSA</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="../combocourses/data-analytics-dsa.html">
+                                                                <h5>Data Analytics</h5>
+                                                                <li>+ Apti + GD</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="#">
+                                                                <h5>Data Science</h5>
+                                                                <li>+ DSA</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <ul class="menu-vertical"><a href="../combocourses/foocode-dsa.html">
+                                                                <h5>FooCode</h5>
+                                                                <li>+ DSA</li>
+                                                            </a>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </li>
+                                        <li class="dropdown"> <span class="dropdown__trigger">
+                                        Addons
+                                    </span>
+                                            <div class="dropdown__container">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="dropdown__content col-lg-2">
+                                                            <ul class="menu-vertical">
+                                                                <h5> <a href="../addons/mobile-development.html">Mobile Development</a></h5>
+                                                                <h5> <a href="../addons/advance-dsa.html">Advance DSA</a></h5>
+                                                                <h5> <a href="../addons/linux-networking.html">Linux + Networking</a></h5>
+                                                                <h5> <a href="../addons/system-design.html">System Design</a></h5>
+                                                                <h5> <a href="../addons/deep-learning.html">Deep Learning</a></h5>
+                                                                <h5> <a href="../addons/computer-vision-nlp.html">Computer Vision + NLP</a></h5>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="bar__module">
+                                    <a class="btn btn--sm type--uppercase" href="#customise-template"> <span class="btn__text">
+                                    Try Builder
+                                </span> </a>
+                                    <a class="btn btn--sm btn--primary type--uppercase" href="#purchase-template"> <span class="btn__text">
+                                    Buy Now
+                                </span> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-container">
+            <section class="text-center bg--primary space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2><b>MOBILE DEVELOPMENT ADDON</b></h2>
+                            <p class="nanum">MERN Stack &amp; Algorithms </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center bg--secondary space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2><b>OVERVIEW</b></h2>
+                            
+                            <p class="" style="font-size: 20px;">The goal of our Web Development Bootcamp is to transform you into a professional developer. You’ll come to understand coding logic using popular languages and frameworks like JavaScript &amp; Ruby on Rails, while learning how to think like a programmer by building software from the ground up. Bootcamp will provide you with mentorship, data-driven curriculum, and a top notch learning environment that will launch you into your first Junior Developer role. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--secondary space--sm text-center">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-md-6 col-lg-3">
+                            <div class="text-block"> <img src="../img/icon1.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <h4>4 Week Bootcamp On Site</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="text-block"> <img src="../img/icon2.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <h4>120hrs+ Full-Time</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="text-block"> <img src="../img/icon3.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <h4>70hr Prep Module</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="text-block"> <img src="../img/icon4.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <h4>40:2 Mentor Ratio</h4>
+                                <p> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2><b>WHAT YOU WILL LEARN</b></h2>
+                            <p class="lead"> </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space--xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"> <img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <span><b>JavaScript &amp; Node.js</b></span>
+                                <p class=""> JavaScript is the universal programming language of the web. You’ll gain firsthand experience with Javascript and Node ecosystems, as well as modern tooling and libraries</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"> <img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <span><b>Databases &amp; Data Modeling</b></span>
+                                <p class=""> Relational and document databases are two of the prevailing paradigms used today. We’ll teach you to be comfortable with SQL, object-stores, and properly model a database. </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"> <img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <span><b>HTML, CSS, and More</b></span>
+                                <p class=""> HTML and CSS are the building blocks of the modern web. You’ll learn to create gorgeous responsive UIs for web apps, not only with HTML5 and CSS3 but also modern front-end&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"><img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <span><b>Software Architecture</b></span>
+                                <p class=""> Understanding how software components should be organized is an essential skill for career growth as a developer. You’ll learn software architecture by studying programming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"> <img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <span><b>React JS<br></b></span>
+                                <p class="">In a short span of time, React JS has become one of the most used JavaScript frameworks. While building a single page application, you’ll learn a new way to think about structuring&nbsp;<br></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"><img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                                <span><b>Ruby on Rails</b></span>
+                                <p class="">This dynamic duo of language &amp; framework is one of the most widely used and polished modern technologies for web development. You will gain familiarity with Rails core&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"> 
+                                <img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                           
+                               <span><b>Automated Testing</b></span>
+                                <p class=""> Testing code manually can be tedious. Capable developers are expected to include automated tests along with the code that they write. We’ll teach you methodologies and best practices</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="feature feature-6"> <img src="../codes.png" class="icon icon--sm icon-Preview color--primary" style="width: 25%;
+    margin-bottom: 0px;" />
+                              <span><b>Computer Science Fundamentals</b></span>
+                                <p class=""> Computer science concepts like data transformation and algorithms help developers understand the theory of how computers and programs work. You’ll establish a solid foundation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center unpad--bottom switchable cta cta-3 bg--secondary switchable--switch">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="switchable__text">
+                                <h2><b>Inside our Full Stack Development Bootcamp Curriculum</b></h2>
+                                <p class=""> Download our curriculum package for a more detailed look at our Web Development Bootcamp curriculum, educational philosophy, and the support structures we use to support you throughout your Bootcamp journey and beyond. </p>
+                                <a class="btn btn--primary type--uppercase" href="#purchase-template"> <span class="btn__text">
+                            Dowload Curriculam PDF <br></span> </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5"> <img alt="Image" class="block" src="../web-pdf.png"> </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="text-center space--sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 style="font-family: 'Spectral SC'"><b>DAY IN THE LIFE.</b></h2>
+                            <p class="nanum" > WHAT HAVE YOU GOTTEN YOURSELF INTO? </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="space--sm">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="process-1">
+                                <div class="process__item">
+                                    <h4 class="coiny">9:00 AM - 10:00 AM:</h4>
+                                    <p class=""> Morning self-study<br>This is your time to settle in, practice some coding exercises, and get ready for the day before morning lecture starts promptly at 10am. </p>
+                                </div>
+                                <div class="process__item">
+                                    <h4 class="coiny">Succsessfully funded through<br> Bray Investments</h4>
+                                    <p class=""> Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out, you'll be making attractive sites faster than any traditional HTML template. </p>
+                                </div>
+                                <div class="process__item">
+                                    <h4 class="coiny">Posted profit<br> second quarter 2015</h4>
+                                    <p class=""> Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out, you'll be making attractive sites faster than any traditional HTML template. </p>
+                                </div>
+                                <div class="process__item">
+                                    <h4 class="coiny">Posted profit<br> second quarter 2015</h4>
+                                    <p class=""> Stack is built with customization and ease-of-use at its core — whether you're a seasoned developer or just starting out, you'll be making attractive sites faster than any traditional HTML template. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center space--sm bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 style="font-family: 'Spectral SC'"><b>INSTRUCTORS</b></h2>
+                            <p class="nanum"> Learn from professional developers who bring years of experience and passion for mentorship into our classroom. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="slider slider--inline-arrows" data-arrows="true">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="testimonial row justify-content-center">
+                                            <div class="col-lg-2 col-md-4 col-6 text-center"> <img class="testimonial__image" alt="Image" src="../img/avatar-round-1.png"> </div>
+                                            <div class="col-lg-7 col-md-8 col-12"> <span class="" style="font-size: 20px;">“We’ve been using Stack to prototype designs quickly and
+										efficiently. Needless to say we’re hugely impressed by the style and value.”
+										</span>
+                                                <h5>Maguerite Holland</h5> <span>Interface Designer — Yoke</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="testimonial row justify-content-center">
+                                            <div class="col-lg-2 col-md-4 col-6 text-center"> <img class="testimonial__image" alt="Image" src="../img/avatar-round-4.png"> </div>
+                                            <div class="col-lg-7 col-md-8 col-12"> <span class="" style="font-size: 20px;"class="h3">“I've been using Medium Rare's templates for a couple of years now and Stack is without a doubt their best work yet. It's fast, performant and absolutely stunning.”
+										<br></span>
+                                                <h5>Lucas Nguyen</h5> <span>Freelance Designer</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="testimonial row justify-content-center">
+                                            <div class="col-lg-2 col-md-4 col-6 text-center"> <img class="testimonial__image" alt="Image" src="../img/avatar-round-3.png"> </div>
+                                            <div class="col-lg-7 col-md-8 col-12"> <span class="" style="font-size: 20px;">“Variant has been a massive plus for my workflow — I can now get live mockups out in a matter of hours, my clients really love it.”
+										</span>
+                                                <h5>Rob Vasquez</h5> <span>Interface Designer — Yoke</span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="admission" class="switchable space--sm">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-md-6"> 
+                        <h2 style="font-family: 'Spectral SC'"><b>ADMISSIONS PROCESS.</b></h2>
+                        <p class="">Our students put their trust in us, so we hold ourselves to the highest standards to ensure that everyone coming into our program is set up for success.</p>
+                        </div>
+                        <div class="col-md-6 switchable__text">
+                            <ul class="accordion accordion-1 accordion--oneopen">
+                                <li class="active">
+                                    <div class="accordion__title"> <span class="h5"><p>Apply online<br></p></span> </div>
+                                    <div class="accordion__content">
+                                        <p class=""> A short 5-10 minute application for you to introduce yourself, including your education and coding experience, plus your super power. You know, the important details that will help us get to know you. New cohorts fill up on a rolling basis so make sure to submit your application as soon as possible! </p>
+                                        <p class="lead"> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion__title"> <span class="h5"><p>Interview<br></p></span> </div>
+                                    <div class="accordion__content">
+                                        <p class=""> Our admissions team will get in touch (quickly!) after reviewing your application and invite you for an interview. We want to meet you, show you our space and give you a chance to see the current cohort in action! This is also your opportunity to ask us anything. </p>
+                                        <p class="lead"> </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion__title"> <span class="h5"><p>Prep Modules<br></p></span> </div>
+                                    <div class="accordion__content">
+                                        <p class="">The first step to becoming a developer is laying your foundation with our Prep Modules. The 70 hours you’ll spend on completing prep will introduce the basic technologies you’ll use throughout bootcamp, including: HTML, CSS, Ruby, JavaScript, and git. You are required to complete the Prep Modules <em>before</em> your first day of bootcamp.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="text-center space--sm bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 style="font-family: 'Spectral SC'"><b>ALUMNI TESTIMONIALS</b></h2>
+                            <p class="nanum"> What Our Alumni Says </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="class" class="bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="slider slider--inline-arrows" data-arrows="true">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="testimonial row justify-content-center">
+                                            <div class="col-lg-2 col-md-4 col-6 text-center"> <img class="testimonial__image" alt="Image" src="../img/avatar-round-1.png"> </div>
+                                            <div class="col-lg-7 col-md-8 col-12"> <span class="" style="font-size: 20px;">“We’ve been using Stack to prototype designs quickly and
+										efficiently. Needless to say we’re hugely impressed by the style and value.”
+										</span>
+                                                <h5>Maguerite Holland</h5> <span>Interface Designer — Yoke</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="testimonial row justify-content-center">
+                                            <div class="col-lg-2 col-md-4 col-6 text-center"> <img class="testimonial__image" alt="Image" src="../img/avatar-round-4.png"> </div>
+                                            <div class="col-lg-7 col-md-8 col-12"> <span class="" style="font-size: 20px;">“I've been using Medium Rare's templates for a couple of years now and Stack is without a doubt their best work yet. It's fast, performant and absolutely stunning.”
+										</span>
+                                                <h5>Lucas Nguyen</h5> <span>Freelance Designer</span> </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="testimonial row justify-content-center">
+                                            <div class="col-lg-2 col-md-4 col-6 text-center"> <img class="testimonial__image" alt="Image" src="../img/avatar-round-3.png"> </div>
+                                            <div class="col-lg-7 col-md-8 col-12"> <span class="" style="font-size: 20px;">“Variant has been a massive plus for my workflow — I can now get live mockups out in a matter of hours, my clients really love it.”
+										</span>
+                                                <h5>Rob Vasquez</h5> <span>Interface Designer — Yoke</span> </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2 style="font-family: 'Spectral SC'"><strong>Upcoming Web Development Classes</strong></h2>
+                            <p class="nanum"> All classes are Offline.<br></p>
+                            
+                        </div>
+                        </div>
+                        <div class="row" style="overflow-y: scroll;">
+                        <div class="col-md-10 col-lg-8">
+                            <table class="border--round table--alternate-row">
+	<thead>
+        <br>
+		<tr class="">
+			<th>Date</th>
+			<th>Structure</th>
+			<th>Length</th>
+				<th>Action</th>
+		</tr>
+	</thead>
+	<tbody class="">
+		<tr>
+			<td>15th May</td>
+			<td>FullStack Development</td>
+			<td>28 Days</td>
+			<td><a class="btn btn--primary" href="#">
+	<span class="btn__text">Apply Now</span>
+</a></td>
+		</tr>
+		<tr>
+		<td>15th May</td>
+			<td>FullStack Development + Add-On Course</td>
+			<td>28 Days + 15 Days</td>
+			<td><a class="btn btn--primary" href="#">
+	<span class="btn__text">Apply Now</span>
+</a></td>
+		</tr>
+		
+	</tbody>
+</table>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="week" class="text-center space--sm bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>
+                                <p style="font-family: 'Spectral SC'"><b>Week by Week</b><b style="font-size: 33px;">&nbsp;</b></pstyle="font-family: 'Coiny'">
+                            </h2>
+                            <p class="nanum" >Description </p>
+                        </div>
+                    </div>
+                </div>
+          <!--  </section>
+            <section class="switchable bg--secondary">-->
+                <div class="container"><br>
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 switchable__text">
+                            <ul class="accordion accordion-1">
+                                <li>
+                                    <div class="accordion__title"> <span class="h5" style="color:green"><b> Q1 :</b></span> </div>
+                                    <div class="accordion__content">
+                                        <p class=""> Stack follows the BEM naming convention that focusses on logical code readability that is reflected in both the HTML and CSS. Interactive elements such as accordions and tabs follow the same markup patterns making rapid development easier for developers and beginners alike. </p>
+                                        <p class=""> Add to this the thoughtfully presented documentation, featuring code highlighting, snippets, class customizer explanation and you've got yourself one powerful value package. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion__title"> <span class="h5" style="color:blue"><b>Q2 :</b></span> </div>
+                                    <div class="accordion__content">
+                                        <p class=""> Stack offers a clean and contemporary to suit a range of purposes from corporate, tech startup, marketing site to digital storefront. Elements have been designed to showcase content in a diverse yet consistent manner. </p>
+                                        <p class=""> Multiple font and colour scheme options mean that dramatically altering the look of your site is just clicks away — Customizing your site in the included Variant Page Builder makes experimenting with styles and content arrangements dead simple. </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="accordion__title"> <span class="h5" style="color:red"><b>Q3: 3</b></span> </div>
+                                    <div class="accordion__content">
+                                        <p class=""> Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions for producing consistently outstanding products, it's no wonder over 20,000 customers enjoy using Medium Rare templates. </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </section>
+            <footer class="space--sm footer-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6"> <span class="type--fine-print">© <span class="update-year"></span> Codeasylums</span> <a class="type--fine-print" href="#">Privacy Policy</a> <a class="type--fine-print" href="#">Legal</a> </div>
+                        <div class="col-sm-6 text-right text-left-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li><a href="#"><i class="socicon socicon-google icon icon--xs"></i></a></li>
+                                <li><a href="#"><i class="socicon socicon-twitter icon icon--xs"></i></a></li>
+                                <li><a href="#"><i class="socicon socicon-facebook icon icon--xs"></i></a></li>
+                                <li><a href="#"><i class="socicon socicon-instagram icon icon--xs"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+          <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/flickity.min.js"></script>
+        <script src="../js/parallax.js"></script>
+        <script src="../js/smooth-scroll.min.js"></script>
+        <script src="../js/scripts.js"></script>
+
+    </body>
+
+</html>
